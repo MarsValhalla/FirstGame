@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salauat</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top_timet"></div>
+      <div class="block">
+        <div class="modal"></div>
+        <div class="cell">
+          <p></p>
+        </div>
+        <div class="cell2">
+          <p></p>
+        </div>
+        <div class="cell">
+          <p></p>
+        </div>
+        <div class="cell2">
+          <p></p>
+        </div>
+        <div class="cell">
+          <p></p>
+        </div>
+        <div class="cell2">
+          <p></p>
+        </div>
+        <div class="cell">
+          <p></p>
+        </div>
+        <div class="cell2">
+          <p></p>
+        </div>
+        <div class="cell">
+          <p></p>
+        </div>
+        <div class="cell2">
+          <p></p>
+        </div>
+        <div class="cell">
+          <p></p>
+        </div>
+        <div class="cell2">
+          <p></p>
+        </div>
+        <div class="cell">
+          <p></p>
+        </div>
+        <div class="cell2">
+          <p></p>
+        </div>
+        <div class="cell">
+          <p></p>
+        </div>
+        <div class="cell2">
+          <p></p>
+        </div>
+        <div class="cell">
+          <p></p>
+        </div>
+        <div class="cell2">
+          <p></p>
+        </div>
+        <div class="cell">
+          <p></p>
+        </div>
+        <div class="cell2">
+          <p></p>
+        </div>
+        <div class="cell">
+          <p></p>
+        </div>
+        <div class="cell2">
+          <p></p>
+        </div>
+        <div class="cell">
+          <p></p>
+        </div>
+        <div class="cell2">
+          <p></p>
+        </div>
+        <div class="cell">
+          <p></p>
+        </div>
+      </div>
+      <div class="btn">
+        <button class="start">START</button>
+        <button class="stop">STOP</button>
+      </div>
+    </div>
+
+    <div id="win"></div>
+  </body>
+ <canvas id="win" width="300" height="300" style="display: none;"></canvas>
+
+    <script>
+      function triggerConfetti() {
+        const canvas = document.getElementById('win');
+        if (!canvas) {
+          console.error('Canvas element not found!');
+          return;
+        }
+
+        const jsConfetti = new JSConfetti({ canvas });
+
+        jsConfetti.addConfetti({
+          confettiColors: [
+            '#ff0a54',
+            '#ff477e',
+            '#ff7096',
+            '#ff85a1',
+            '#fbb1bd',
+            '#f9bec7',
+          ],
+        });
+
+        console.log('Confetti animation triggered!');
+      }
+    </script>
+    <script src="./index.js"></script>
+</html>
